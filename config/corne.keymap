@@ -2,39 +2,39 @@
     keymap {
         compatible = "zmk,keymap";
 
-        L0 {
+        base {
             bindings = <
                 &kp TAB   &kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U &kp I &kp O &kp P &kp BSPC
                 &kp LCTL  &kp A &kp S &kp D &kp F &kp G           &kp H &kp J &kp K &kp L &kp SCLN &kp QUOT
                 &kp LSFT  &kp Z &kp X &kp C &kp V &kp B           &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp ESC
-                &kp LGUI  &mo L1 &kp SPACE                       &kp ENTER &mo L2 &kp RALT
+                &kp LGUI  &mo lower &kp SPACE                     &kp ENTER &mo raise &kp RALT
             >;
         };
 
-        L1 {
+        lower {
             bindings = <
                 &kp TAB   &kp 1 &kp 2 &kp 3 &kp 4 &kp 5           &kp 6 &kp 7 &kp 8 &kp 9 &kp 0 &kp BSPC
-                &kp LCTL  &none &none &none &none &none           &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
-                &kp LSFT  &none &none &none &none &none           &none &none &none &none &none &none
-                &kp LGUI  &none &kp SPACE                        &kp ENTER &mo L3 &kp RALT
+                &kp LCTL  &trans &trans &trans &trans &trans      &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+                &kp LSFT  &trans &trans &trans &trans &trans      &trans &trans &trans &trans &trans &trans
+                &kp LGUI  &trans &kp SPACE                        &kp ENTER &mo adjust &kp RALT
             >;
         };
 
-        L2 {
+        raise {
             bindings = <
                 &kp TAB   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PERCENT    &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-                &kp LCTL  &kp HOME &kp UP &kp END &none &none             &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &none &none
-                &kp LSFT  &kp LEFT &kp DOWN &kp RIGHT &none &none         &kp PLUS &kp LCBR &kp RCBR &kp PIPE &kp TILDE &none
-                &kp LGUI  &mo L3 &kp SPACE                                &kp ENTER &none &kp RALT
+                &kp LCTL  &kp HOME &kp UP &kp END &trans &trans            &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &trans &trans
+                &kp LSFT  &kp LEFT &kp DOWN &kp RIGHT &trans &trans        &kp PLUS &kp LCBR &kp RCBR &kp PIPE &kp TILDE &trans
+                &kp LGUI  &mo adjust &kp SPACE                             &kp ENTER &trans &kp RALT
             >;
         };
 
-        L3 {
+        adjust {
             bindings = <
-                &bootloader &none &none &none &none &none       &kp 7 &kp 8 &kp 9 &none &none &none
-                &rm_togg &rm_hueu &rm_satu &rm_valu &none &none &kp 4 &kp 5 &kp 6 &none &none &none
-                &rm_next &rm_hued &rm_satd &rm_vald &none &none &kp 1 &kp 2 &kp 3 &none &none &none
-                &kp LGUI &none &kp SPACE                        &kp ENTER &none &kp RALT
+                &bootloader &trans &trans &trans &trans &trans      &kp 7 &kp 8 &kp 9 &trans &trans &trans
+                &rm_togg &rm_hueu &rm_satu &rm_valu &trans &trans  &kp 4 &kp 5 &kp 6 &trans &trans &trans
+                &rm_next &rm_hued &rm_satd &rm_vald &trans &trans  &kp 1 &kp 2 &kp 3 &trans &trans &trans
+                &kp LGUI &trans &kp SPACE                           &kp ENTER &trans &kp RALT
             >;
         };
     };
