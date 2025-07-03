@@ -25,10 +25,10 @@
 
         raise {
             bindings = <
-                &kp TAB   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PERCENT    &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-                &kp LCTL  &kp HOME &kp UP &kp END &trans &trans            &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &trans &trans
-                &kp LSFT  &kp LEFT &kp DOWN &kp RIGHT &trans &trans        &kp PLUS &kp LCBR &kp RCBR &kp PIPE &kp TILDE &trans
-                &kp LGUI  &mo adjust &kp SPACE                             &kp ENTER &trans &kp RALT
+                &kp TAB   &kp EXCL &kp AT &kp HASH &kp DLR &kp PERC    &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
+                &kp LCTL  &kp HOME &kp UP &kp END &trans &trans        &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &trans &trans
+                &kp LSFT  &kp LEFT &kp DOWN &kp RIGHT &trans &trans    &kp PLUS &kp LCBR &kp RCBR &kp PIPE &kp TILDE &trans
+                &kp LGUI  &mo adjust &kp SPACE                         &kp ENTER &trans &kp RALT
             >;
         };
 
